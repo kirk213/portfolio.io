@@ -10,13 +10,14 @@
 }
 /*変数*/
 :root{
-    --main-color:#71aaffc0;
+    --main-color:#65cee9c0;
     --body-color: #f1f1f1;
     --container-color: #323331;
     --heading-color: #222321;
     --box-color: #0d0f26;
     --bg-color: #fff;
     --back: #5D5D5D;
+    --gradient:linear-gradient(180deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
 }
 body{
     color: var(--bg-color);
@@ -128,10 +129,35 @@ header{
     position: relative;
     max-width: 600px;
     width: 100%;
-    margin:auto;
     display: "flex";
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align:center;
+    margin-top: 30px;
+}
+.home-img{
+    margin: auto;
+    padding-right: 8px;
+    padding-top: 7px;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    background: var(--gradient);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.home-text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}.home-text h3{
+    color: var(--main-color);
+}
+.home-text h2{
+    font-size:3.5rem;
+    line-height: 4.8rem;
 }
