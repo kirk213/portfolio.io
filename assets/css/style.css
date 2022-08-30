@@ -11,11 +11,12 @@
 /*変数*/
 :root{
     --main-color:#71aaffc0;
-    --body-color: #c2d0d6;
+    --body-color: #f1f1f1;
     --container-color: #323331;
     --heading-color: #222321;
     --box-color: #0d0f26;
     --bg-color: #fff;
+    --back: #5D5D5D;
 }
 body{
     color: var(--bg-color);
@@ -110,3 +111,27 @@ header{
     transform: translate(0px,-5px);
 }
 
+/*ホーム*/
+.home{
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    background-color: var(--body-color);
+    
+}
+.home-text{
+    color: var(--heading-color);
+}
+.home-content{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin:auto;
+    display: "flex";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
