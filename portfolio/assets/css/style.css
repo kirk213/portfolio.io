@@ -1,0 +1,110 @@
+/*グーグルフォント*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+/*変数*/
+:root{
+    --main-color:#71aaffc0;
+    --body-color: #c2d0d6;
+    --container-color: #323331;
+    --heading-color: #222321;
+    --box-color: #0d0f26;
+    --bg-color: #fff;
+}
+body{
+    color: var(--bg-color);
+    background: var(--body-color);
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: auto;
+    margin: auto;
+    width: 100%;
+    background: var(--heading-color);
+}
+header{
+    /*position:fixedでヘッダーをスクロールしても上部に固定*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*z-indexで手前に表示する優先順位を設定(数字が大きい方が全面)*/
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size:1.2rem;
+    font-weight: 600;
+    padding-left: 1%;
+    color: var(--bg-color)
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;   
+    padding-left: 45%;
+    padding-right: 0%;
+ 
+
+}
+.nav-link{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--bg-color);
+}
+.nav-link:hover{
+    color: var(--main-color);
+    background: var(--container-color);
+    transition: 0.3s all linear;
+}
+/*メニューアイコン*/
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    row-gap: 5px;
+    padding-right: 2%;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div{
+    display: block;
+    background: var(--bg-color);
+    height: 2px;
+    width: 22px;
+    transition: 0.3s;
+}
+
+.move .line3{
+    transform: translate(0px,5px);
+}
+.move .line1{
+    transform: translate(0px,-5px);
+}
+
