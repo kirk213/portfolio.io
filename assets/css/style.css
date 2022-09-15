@@ -24,7 +24,7 @@
 body{
     padding-left: 1%;
     padding-right: 1%;
-    color: var(--bg-color);
+    color: var(--heading-color);
     background: var(--body-color);
 }
 img{
@@ -133,14 +133,8 @@ header{
     color: var(--heading-color);
 }
 .home-content{
-    position: relative;
     max-width: 600px;
     width: 100%;
-    display: "flex";
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
     margin-top: 30px;
 }
 .home-img{
@@ -206,7 +200,6 @@ header{
 /*about*/
 .about{
     font-size: 1.2rem;
-    background-color: var(--body-color);
     color: var(--heading-color);
 }
 .heading{
@@ -214,4 +207,48 @@ header{
 }
 .about-data h2{
     padding-bottom:1rem;
+}
+
+/*ポートフォリオ*/
+.portfolio-content{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: 15%;
+    width: 75%;
+}
+
+.portfolio-img{
+    border-radius: 10%;
+    vertical-align:top;
+}
+.img{
+    position: relative;
+}
+.img-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #1111116c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 10%;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+    transition: 0.3s all linear;
+}
+
+.img-title{
+    font-size: 1.25em;
+    font-weight: bold;
 }
