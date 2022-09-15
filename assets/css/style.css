@@ -216,8 +216,8 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    column-gap: 15%;
-    width: 75%;
+    column-gap: 25%;
+    width: 70%;
 }
 
 .portfolio-img{
