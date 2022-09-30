@@ -213,11 +213,10 @@ header{
 .portfolio-content{
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    column-gap: 25%;
-    width: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    row-gap: 10em;
 }
 
 .portfolio-img{
@@ -225,6 +224,7 @@ header{
     vertical-align:top;
 }
 .img{
+    flex-basis: 35%;
     position: relative;
 }
 .img-overlay{
